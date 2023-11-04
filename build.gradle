@@ -34,13 +34,3 @@ dependencyManagement {
 tasks.named('test') {
 	useJUnitPlatform()
 }
-
-jib {
-	from {
-		image = 'openjdk:17.0.2-slim'
-	}
-	to {
-		image = 'list/eureka'
-		tags = ['latest']
-	}
-}
